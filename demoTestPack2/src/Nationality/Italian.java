@@ -9,7 +9,7 @@ public class Italian extends Person {
 
 
     @Override
-    public void sayHello() {
-        System.out.println(idiom);
+    public String sayHello() {
+        return idiom;
     }
 }
