@@ -1,6 +1,6 @@
 package GlobantModel;
 
-public class Glober {
+public abstract class Glober {
 
     private String studio;
     private String project;

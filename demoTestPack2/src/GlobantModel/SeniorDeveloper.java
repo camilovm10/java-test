@@ -8,6 +8,11 @@ public class SeniorDeveloper extends Glober implements Programmer{
 
     @Override
     public void code() {
-        System.out.println("Programming");
+        System.out.println("Coding");
+    }
+
+    @Override
+    public void toWalk() {
+        System.out.println("walking");
     }
 }
