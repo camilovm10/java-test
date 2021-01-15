@@ -46,8 +46,8 @@ public class Main {
                     System.out.println("How many products you are adding");
                     int stockNew = scan.nextInt();
 
-                    Product newP = new Product(nameNew, priceNew, stockNew);
-                    productsArray.add(newP);
+//                    Product newP = new Product(nameNew, priceNew, stockNew);
+                    productsArray.add(new Product(nameNew, priceNew, stockNew));
                     break;
                 case 2:
                     System.out.println("What's the name of the product you want to sell?");
@@ -80,10 +80,10 @@ public class Main {
                     }
                     break;
                 case 3:
-                    for (Product product : productsArray ) {
-                        System.out.print("Name : " + product.getName() + ",  ");
-                        System.out.print("Price : " + product.getPrecio() + ",  ");
-                        System.out.print("Stock : " + product.getStock() + "");
+                    for (Product element : productsArray ) {
+                        System.out.print("Name : " + element.getName() + ",  ");
+                        System.out.print("Price : " + element.getPrecio() + ",  ");
+                        System.out.print("Stock : " + element.getStock() + "");
                         System.out.println("");
                     }
                     break;
@@ -155,6 +155,7 @@ public class Main {
                     "Do you want to do another operation ? \n" +
                     "yes (1), no (2)" );
             int yesOrNo = scan.nextInt();
+
             if (yesOrNo == 1) {
                 init = "yes";
             } else {
