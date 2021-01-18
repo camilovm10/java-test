@@ -4,9 +4,9 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Triangle tria = new Triangle();
+        Figure rec = new Rectangle(5);
 
-        System.out.println(tria.i);
+        System.out.printf("%.2f%n", 2.0568457);
 
     }
 

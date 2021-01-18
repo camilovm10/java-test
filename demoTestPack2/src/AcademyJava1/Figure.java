@@ -1,7 +1,17 @@
 package AcademyJava1;
 
-public class Figure {
+public abstract class Figure {
 
-    int height;
+    public int area;
+
+    public Figure(int area) {
+        this.area = area;
+    }
+
+    public void getHello() {
+        System.out.println("Hi from parent");
+    }
+
+    public abstract void getArea();
 
 }
